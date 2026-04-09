@@ -37,6 +37,7 @@ public class CheckoutOverviewPage {
 
             String priceText = priceElement.getText().replace("$", "").trim();
             total += Double.parseDouble(priceText);
+
         }
         return total;
     }

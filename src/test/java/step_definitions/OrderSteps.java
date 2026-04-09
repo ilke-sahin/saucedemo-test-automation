@@ -30,7 +30,7 @@ public class OrderSteps {
         loginPage.login(username, password);
     }
 
-    @And("User adds {string} to the cart")
+    @When("User adds {string} to the cart")
     public void addProductToCart(String productName) {
         inventoryPage.clickAddToCartButton(productName);
     }

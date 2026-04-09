@@ -22,7 +22,7 @@ public class InventoryPage {
 
         String dynamicId = "add-to-cart-" + formattedName;
 
-        WebElement dynamicAddToCartBtn = DriverManager.getDriver().findElement(By.id(dynamicId));
+        WebElement dynamicAddToCartBtn = DriverManager.getDriver().findElement(By.xpath("//button[@id='" + dynamicId + "']"));
 
         ReusableMethods.waitForElementClickable(dynamicAddToCartBtn, 5);
         dynamicAddToCartBtn.click();

@@ -17,7 +17,7 @@ public class DriverManager {
         browserName.set(browser);
     }
 
-    public static WebDriver getDriver() {
+    public static WebDriver getDriver() {   // Get driver method will be used by multiple threads.
         if (driverPool.get() == null) {
             String targetBrowser = (browserName.get() != null) ? browserName.get() : ConfigReader.getProperty("browser");
 

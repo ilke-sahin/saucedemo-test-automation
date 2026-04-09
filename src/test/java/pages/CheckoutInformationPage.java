@@ -44,15 +44,11 @@ public void enterPostalCode(String postalCode){
 }
 
 public void fillFormAndContinue(String firstName, String lastName, String postalCode) {
-    enterFirstName(firstName);
+    enterFirstName(firstName);         //firsNameInput.sendKeys(firstName); ?
     enterLastName(lastName);
     enterPostalCode(postalCode);
     clickbtnContinue();
 }
-
-
-
-
 
 
 }
